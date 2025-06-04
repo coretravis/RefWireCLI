@@ -41,7 +41,7 @@ refwire dataset list-ids
 This will prompt you for:
 - RefWire Url: Your RefWire Instance URL e.g `https://myrefwireeintance.com`, `https://localhost:7050`
 - ApiKey (Use 'ThisIsTheApiKey' for demo purposes but make sure to set a strong key for production via Configuration)
-- ListStor Server Url (optional): Set this to `https://refpack.refwire.online` to use the `refwire **pull** {datasetID}` command which give you access to standardized datasets found at https://stor.refwire.online
+- RefStor Server Url (optional): Set this to `https://refpack.refwire.online` to use the `refwire **pull** {datasetID}` command which give you access to standardized datasets found at https://stor.refwire.online
 - **Note: You will only need to set the configuration only once**
 
 ---
@@ -206,7 +206,7 @@ refwire api-key create "WebKey" -d "Public access" -s read
 | `create --file <path>`                             | Create dataset from JSON file.                      |
 | `update <id> --file <path>`                        | Update dataset from file.                           |
 | `import`                                           | Launch interactive import wizard.                   |
-| `pull <liststorId>`                                | Download from ListStor. Options:                    |
+| `pull <liststorId>`                                | Download from RefStor. Options:                    |
 |     `-i`, `-n`, `-d`, `--id-field`, `--name-field` |                                                     |
 
 </details>
@@ -297,7 +297,7 @@ refwire dataset delete obsoleteDataset --force
 refwire dataset import
 ```
 
-### Pull from ListStor
+### Pull from RefStor
 
 ```bash
 refwire dataset pull world-countries \
