@@ -1,0 +1,38 @@
+{
+  "name": "@coretravis/refwire",
+  "version": "1.0.1",
+  "description": "CLI tool for managing RefWire",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coretravis/RefWireCLI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coretravis/RefWireCLI/issues"
+  },
+  "homepage": "https://github.com/coretravis/RefWireCLI#readme",
+  "main": "refwire.js",
+  "type": "module",
+  "bin": {
+    "refwire": "./refwire.js"
+  },
+  "scripts": {
+    "start": "node refwire.js"
+  },
+  "keywords": [
+    "cli",
+    "refwire",
+    "liststor",
+    "api"
+  ],
+  "author": "coretravis",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.4",
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.20",
+    "jszip": "3.10.1"
+  }
+}
